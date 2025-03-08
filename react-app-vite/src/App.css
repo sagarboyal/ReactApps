@@ -17,7 +17,10 @@ a:hover{
   text-align: center;
 }
 .header a{
-  margin-left: 15px;
+  margin-right: 16px;
+}
+.header a:hover{
+  text-decoration: none;
 }
 .about{
   background-color: #ebf7ef;
