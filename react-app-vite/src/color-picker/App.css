@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.color-palette{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-box{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.selected-color{
+    margin-top: 20px;
+}
+
+.selected-color input{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.selected-color input:hover{
+    background-color: #fff;
+}
