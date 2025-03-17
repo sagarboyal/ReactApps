@@ -2,9 +2,9 @@ export const fetchPostsRequest = () => ({
     type: "FETCH_POSTS_REQUEST"
 });
 
-export const fetchPostsSuccess = (posts) => ({
+export const fetchPostsSuccess = (post) => ({
     type: "FETCH_POSTS_SUCCESS",
-    payload: posts
+    payload: post
 });
 
 export const fetchPostsFailure = (error) => ({
