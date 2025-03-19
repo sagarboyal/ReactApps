@@ -10,11 +10,16 @@ const ProductCard = (
     const [selectedProductViewModal, setSelectedProductViewModal] = useState({});
     const isAvailable = quantity && Number(quantity) > 0;
 
+    const handleProductViewModal = (product) => {
+        setProductViewModal(true);
+        setSelectedProductViewModal(product);
+    };
+
     return(
         <div 
         className="border rounded-lg overflow-hidden shadow-xl transition-shadow duration-300">
             <div 
-            onClick={() => {}}
+            onClick={() => {handleProductViewModal({id: productId, productName, image, description, quantity, price, discount, specialPrice, about})}}
             className="w-full overflow-hidden  aspect-[3/2]">
                 <img 
                 className="w-full h-full cursor-pointer transition-transform duration-300 transform hover:scale-105"
@@ -23,7 +28,7 @@ const ProductCard = (
             <div
             className="p-4">
                 <h2
-                    onClick={() =>{}}
+                    onClick={() => {handleProductViewModal({id: productId, productName, image, description, quantity, price, discount, specialPrice, about})}}
                     className="text-lg font-semibold text-slate-800 mb-2 cursor-pointer">
                     {productName}
                 </h2>
@@ -53,6 +58,8 @@ const ProductCard = (
                             ₹ {(specialPrice || price).toFixed(2)}
                         </span>
                         <button
+                            disabled={!isAvailable || btnLoader}
+                            onClick={() =>{}}
                             className={`bg-blue-500 rounded-lg px-5 mt-1 py-2 text-white font-semibold
                                 ${
                                 isAvailable
