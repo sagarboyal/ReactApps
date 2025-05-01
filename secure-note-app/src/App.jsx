@@ -4,12 +4,13 @@ import Navbar from "./components/Navbar";
 import AboutPage from "./components/about-page/AboutPage";
 import ContactPage from "./components/contact-page/ContactPage";
 import AccessDenied from "./components/auth/AccessDenied";
+import Signup from "./components/auth/Signup";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <AccessDenied />
+      <Signup />
     </Router>
   );
 }

@@ -14,6 +14,7 @@ export default {
         btnColorDark: "#0056b3", // Dark variant for button color
         noteColor: "#FFCF7C",
         headerColorDark: "#1e1e1e", // Darker background for dark mode
+        customRed: '#e53935', // Custom red color
       },
       fontWeight: {
         customWeight: 500,
@@ -28,8 +29,8 @@ export default {
         customHeight: "530px",
       },
       fontFamily: {
-        montserrat: ["Montserrat"],
         dancingScript: ["Dancing Script"],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       fontSize: {
         logoText: "30px",
@@ -47,6 +48,7 @@ export default {
         custom: "0 0 15px rgba(0, 0, 0, 0.3)",
         light: "0 0 10px rgba(255, 255, 255, 0.1)", // Light shadow for dark mode
         dark: "0 0 20px rgba(0, 0, 0, 0.5)", // Dark shadow for darker themes
+        custom: '0 0 10px rgba(0, 0, 0, 0.1)', // Custom shadow utility
       },
       spacing: {
         customSpacing: "16px", // Custom spacing utility
